@@ -22,7 +22,7 @@ const HomePage: React.FC<RouteComponentProps> = (props) => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButtons slot="start">
+          <IonButtons slot="start" onClick={()=> props.history.push('/home/menu')}>
             <IonIcon name="menu" />
           </IonButtons>
           <IonTitle>Daruso</IonTitle>

@@ -12,7 +12,7 @@ import { IonPage,
     IonButton,
     IonButtons,
     IonIcon,
-    IonInput
+    IonInput,
     } from '@ionic/react'
 import {  arrowRoundBack, undo, share, starOutline  } from 'ionicons/icons'
 import { RouteComponentProps } from 'react-router'
@@ -74,7 +74,9 @@ const NewsPage: React.FC<RouteComponentProps> =(props)=>{
           <IonCardContent>
             <form className="flex flex-col ">
                 <IonInput type="text" name="name" placeholder='Comment...' className=" border-2"></IonInput>
-               <IonButton className="w-1/4 items-end mt-2" slot="end">Send</IonButton>
+                <div className="flex justify-end">
+                    <IonButton className="w-1/4 items-end mt-2">Send</IonButton>
+                </div>
             </form>
             
           </IonCardContent>
